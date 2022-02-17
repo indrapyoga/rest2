@@ -17,7 +17,7 @@ class KResource(Resource):
         nama = request.form["nama"]
         nim = request.form["nim"]
         identitas["nama mahasiswa"] = nama
-        identitas["nim mahassiwa"] = nim
+        identitas["nim mahasiswa"] = nim
         return jsonify({"msg":"berhasil ditambah"})
 
 api.add_resource(KResource,"/api",methods=["GET","POST"])
