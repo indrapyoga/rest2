@@ -11,7 +11,7 @@ identitas = {}
 class KResource(Resource):
     def get(self):
         response = identitas
-        return response
+        return jsonify(response)
     
     def post(self):
         nama = request.form["nama"]
